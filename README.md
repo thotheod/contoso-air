@@ -16,9 +16,9 @@ echo "Random resource identifier will be: ${RAND}"
 
 # set variables
 AZURE_SUBSCRIPTION_ID=$(az account show --query id -o tsv)
-AZURE_RESOURCE_GROUP_NAME=rg-contosoair$RAND
+AZURE_RESOURCE_GROUP_NAME=rg-aks-auto-swc-20241129 # rg-mita-contosoair$RAND
 AZURE_COSMOS_ACCOUNT_NAME=db-contosoair$RAND
-AZURE_REGION=eastus
+AZURE_REGION=swedencentral
 
 # create resource group
 az group create \
