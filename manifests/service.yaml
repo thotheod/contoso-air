@@ -1,0 +1,15 @@
+apiVersion: v1
+kind: Service
+metadata:
+  name: test-1
+  namespace: ns-test-1
+  labels:
+    kubernetes.azure.com/generator: devhub
+spec:
+  type: LoadBalancer
+  selector:
+    app: test-1
+  ports:
+    - protocol: TCP
+      port: 3000
+      targetPort: 3000
